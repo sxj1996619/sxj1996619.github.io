@@ -1,0 +1,25 @@
+.header
+{
+background-color: #aaccbb;
+height: 100px;
+text-align: center;
+}
+.main
+{
+background-color:  #ab2;
+height:320px;
+
+}
+
+.sidebar
+{
+background-color:  #0abcde;
+border-radius: 10px;
+}
+
+.footer
+{
+background-color:  #000;
+text-align: center;
+color: #fff;
+}
