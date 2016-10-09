@@ -1,0 +1,36 @@
+.header {
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #fff;
+}
+
+
+.sidebar {
+    background-color: #21F5D3;
+}
+
+.sidebar-module {
+    padding: 16px;
+    background-color: #3ffeee;
+    border-radius: 10px;
+}
+
+.footer {
+    padding: 40px 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #6c6cc6;
+}
+
+h1.title {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+.row_item {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #F0F0F0;
+    padding-bottom: 25px;
+}
