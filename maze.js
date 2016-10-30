@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var canvas;
 var ctx;
 var dx = 5;
@@ -101,7 +100,7 @@ function draw() {
 }
 init();
 window.addEventListener('keydown', doKeyDown, true);
-=======
+
 
 var canvas;
 var ctx;
@@ -201,4 +200,3 @@ rect(x, y, 15,15);
 }
 init();
 window.addEventListener('keydown',doKeyDown,true);
->>>>>>> origin/master
