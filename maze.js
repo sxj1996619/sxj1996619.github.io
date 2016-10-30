@@ -203,8 +203,5 @@ function draw() {
     rect(x, y, 15, 15);
 }
 init();
-<<<<<<< HEAD
+
 window.addEventListener('keydown', doKeyDown, true);
-=======
-window.addEventListener('keydown',doKeyDown,true);
->>>>>>> origin/master
