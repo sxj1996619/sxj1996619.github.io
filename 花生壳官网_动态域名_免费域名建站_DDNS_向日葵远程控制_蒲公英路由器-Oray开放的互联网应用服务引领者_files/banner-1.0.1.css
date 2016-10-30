@@ -1,0 +1,18 @@
+.banner-wrap{position:relative;width:100%;overflow:hidden;min-height:160px}
+.banner-wrap .banner{overflow:hidden;width:800%}
+.banner-wrap .banner .banner-item{float:left;width:12.5%;overflow:hidden}
+.banner-wrap .banner .banner-item a{display:block;width:100%;height:100%}
+.banner-wrap .banner .banner-item img{width:100%}
+.banner-wrap .arrow-wrap{display:none}
+.banner-wrap .arrow-wrap .arrow-sprite{display:inline-block;width:57px;height:100px;background-image:url(http://static.orayimg.com/home/img/arrow-sprite.png);background-repeat:no-repeat;position:absolute;z-index:9}
+.banner-wrap .arrow-wrap .arrow-left{left:0;top:50%;margin-top:-50px}
+.banner-wrap .arrow-wrap .arrow-left:hover{background-position:0 -100px}
+.banner-wrap .arrow-wrap .arrow-right{right:0;top:50%;margin-top:-50px;background-position:-57px 0}
+.banner-wrap .arrow-wrap .arrow-right:hover{background-position:-57px -100px}
+.banner-wrap .pointer-wrap{width:160px;height:20px;line-height:20px;position:absolute;z-index:99;left:50%;bottom:10px;margin-left:-80px;text-align:center;cursor:pointer}
+.banner-wrap .pointer-wrap li{display:inline-block;*display:inline;*zoom:1;margin:0 4px}
+.banner-wrap .pointer-wrap li a{display:inline-block;*display:inline;*zoom:1;width:10px;height:10px;margin:1px;text-indent:-999px;border:1px solid #fff;border-radius:10px;cursor:pointer;background-color:#000 \9;background-color:rgba(0,0,0,0)}
+.banner-wrap .pointer-wrap li.active a{background-color:#fff}
+@media(max-width:750px){.banner-wrap .pointer-wrap{bottom:5px}
+..banner-wrap .pointer-wrap{cursor:default}
+}
