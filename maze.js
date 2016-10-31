@@ -98,6 +98,5 @@ function draw() {
     ctx.fillStyle = "purple";
     rect(x, y, 15, 15);
 }
-init();
-window.addEventListener('keydown', doKeyDown, true);
+
 
