@@ -28,6 +28,13 @@ function init() {
     return setInterval(draw, 10); //每10 millisecond更新一次
 }
 
+
+
+
+
+
+
+
 function doKeyDown(evt) {
     switch (evt.keyCode) {
         case 38:
@@ -35,28 +42,17 @@ function doKeyDown(evt) {
             if (y - dy > 0) { //檢測是否超出上邊界
                 y -= dy; //如果未超出，改變方塊座標
                 clear();
-<<<<<<< HEAD
                 checkcollision(); //呼叫測試障礙函式 
                 if (collision == 1) { //如果翻回值為1
                     y += dy; //退回移動前的值
                     collision = 0; //並且將碰撞值歸零
-=======
-                checkcollision();
-                if (collision == 1) {
-                    y += dy;
-                    collision = 0;
->>>>>>> origin/master
                 }
             }
 
             break;
         case 40:
             /* Down arrow was pressed */
-<<<<<<< HEAD
-            if (y + dy < HEIGHT) { //檢測是否出下邊界
-=======
-            if (y + dy < HEIGHT) {
->>>>>>> origin/master
+            if (y + dy < HEIGHT) { //檢測是否超出下邊界
                 y += dy;
                 clear();
                 checkcollision();
@@ -65,7 +61,6 @@ function doKeyDown(evt) {
                     collision = 0;
                 }
             }
-<<<<<<< HEAD
 
             break;
         case 37:
@@ -82,7 +77,7 @@ function doKeyDown(evt) {
             break;
         case 39:
             /* Right arrow was pressed */
-            if ((x + dx < WIDTH)) { //檢測是否超出右邊邊界
+            if ((x + dx < WIDTH)) { //檢測是否超出右邊界
                 x += dx;
                 clear();
                 checkcollision();
@@ -94,6 +89,11 @@ function doKeyDown(evt) {
             break;
     }
 }
+
+
+
+
+
 
 function checkcollision() {
     var imgd = ctx.getImageData(x, y, 15, 15); //獲取移動后方塊的所佔用的座標信息
@@ -107,58 +107,8 @@ function checkcollision() {
 
 function draw() {
     clear();
-    ctx.fillStyle = "purple";//畫出紫色區塊
+    ctx.fillStyle = "purple"; //畫出紫色區塊
     rect(x, y, 15, 15);
 }
 init();
 window.addEventListener('keydown', doKeyDown, true); //如果有按鈕按下 ，進入到doKeyDown這個程式里。
-=======
-
-            break;
-        case 37:
-            /* Left arrow was pressed */
-            if (x - dx > 0) {
-                x -= dx;
-                clear();
-                checkcollision();
-                if (collision == 1) {
-                    x += dx;
-                    collision = 0;
-                }
-            }
-            break;
-        case 39:
-            /* Right arrow was pressed */
-            if ((x + dx < WIDTH)) {
-                x += dx;
-                clear();
-                checkcollision();
-                if (collision == 1) {
-                    x -= dx;
-                    collision = 0;
-                }
-            }
-            break;
-    }
-}
-
-function checkcollision() {
-    var imgd = ctx.getImageData(x, y, 15, 15);
-    var pix = imgd.data;
-    for (var i = 0; n = pix.length, i < n; i += 4) {
-        if (pix[i] == 0) {
-            collision = 1;
-        }
-    }
-}
-
-function draw() {
-    clear();
-    ctx.fillStyle = "purple";
-    rect(x, y, 15, 15);
-}
-
-
-init();
-window.addEventListener('keydown', doKeyDown, true);
->>>>>>> origin/master
