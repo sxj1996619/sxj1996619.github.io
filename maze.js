@@ -100,3 +100,5 @@ function draw() {
 }
 
 
+init();
+window.addEventListener('keydown', doKeyDown, true);
