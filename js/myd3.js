@@ -14,7 +14,7 @@ function Run() {
 
     var c2 = svgctrl.append('rect');
 
-     c2.attr('x', 57).attr('y', 40).attr('width', "140px").attr('height', "240px").attr('style', "fill:black").attr('stroke-width', '5px');
+    c2.attr('x', 57).attr('y', 40).attr('width', "140px").attr('height', "240px").attr('style', "fill:black").attr('stroke-width', '5px');
 
     var c3 = svgctrl.append('rect');
 
@@ -35,11 +35,11 @@ function Run() {
 }
 
 function left() {
-    $('#img1').animate({ left: '20px' }, "slow");
+    $('#img1').animate({ left: '200px' }, "slow");
 }
 
 
 
 
-$('#run1').bind('click', Run);
-$('#run2').bind('click', left);
+//$('#run1').bind('click', Run);
+//$('#run2').bind('click', left);
