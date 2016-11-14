@@ -6,14 +6,15 @@ function Run() {
     var c1 = svgctrl.append('rect');
 
     c1.attr('x', 50).attr('y', 20).attr('width', "154px").attr('height', "310px").attr('style', "fill:#ededed").attr('stroke-width', '5px').append('id', "img1");
+
     $('#img1').bind('click', function() {
-        $('#img1').animate({ "top": "+=50" }, "slow");
+        $('#img1').animate({ left: '20px' }, "slow");
     })
 
 
     var c2 = svgctrl.append('rect');
 
-    c2.attr('x', 57).attr('y', 40).attr('width', "140px").attr('height', "240px").attr('style', "fill:black").attr('stroke-width', '5px');
+     c2.attr('x', 57).attr('y', 40).attr('width', "140px").attr('height', "240px").attr('style', "fill:black").attr('stroke-width', '5px');
 
     var c3 = svgctrl.append('rect');
 
@@ -33,6 +34,12 @@ function Run() {
 
 }
 
+function left() {
+    $('#img1').animate({ left: '20px' }, "slow");
+}
+
+
 
 
 $('#run1').bind('click', Run);
+$('#run2').bind('click', left);
